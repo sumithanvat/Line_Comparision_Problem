@@ -12,6 +12,16 @@ public class LineComperision {
         else
             System.out.println("Lines are not equals...");
     }
+    //Method For Comparing Line
+    static void compare(Integer length1,Integer length2){
+        int result = length1.compareTo(length2);
+        if(result>0)
+            System.out.println("Line One is greater :");
+        else if(result<0)
+            System.out.println("Line two is greater : ");
+        else
+            System.out.println("Both lines are Equal...");
+    }
 
     public static void main(String[] args) {
 
@@ -49,6 +59,8 @@ public class LineComperision {
 
         //Calling Equal Method
         equals(length1, length2);
+        //calling Compare Method
+        compare(length1, length2);
     }
 
 }
